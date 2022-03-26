@@ -16,10 +16,10 @@ wget https://raw.githubusercontent.com/RajaRK2018/observabilitychallenge/main/st
 sleep 3s
 sudo cp start-prom-app.service /lib/systemd/system/
 sleep 2s
-systemctl daemon-reload
+sudo systemctl daemon-reload
 sleep 2s
-systemctl enable start-prom-app.service
+sudo systemctl enable start-prom-app.service
 sleep 2s
-systemctl start start-prom-app.service
+sudo systemctl start start-prom-app.service
 sleep 2s
-systemctl status start-prom-app.service -l
+sudo systemctl status start-prom-app.service -l

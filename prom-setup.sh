@@ -14,7 +14,7 @@ chmod +x start-prom-app.sh
 sleep 1s
 wget https://raw.githubusercontent.com/RajaRK2018/observabilitychallenge/main/start-prom-app.service
 sleep 3s
-cp start-prom-app.service /lib/systemd/system/
+sudo cp start-prom-app.service /lib/systemd/system/
 sleep 2s
 systemctl daemon-reload
 sleep 2s

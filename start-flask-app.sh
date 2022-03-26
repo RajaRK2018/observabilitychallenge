@@ -1,3 +1,3 @@
 #!/bin/sh
 
-python3 /usr/bin/obs/flask-app.py & /usr/bin/obs/node_exporter-1.3.1.linux-amd64/node_exporter &
+python3 /home/ec2-user/obs/flask-app.py & /home/ec2-user/obs/node_exporter-1.3.1.linux-amd64/node_exporter &

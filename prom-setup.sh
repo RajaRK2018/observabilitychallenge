@@ -1,11 +1,3 @@
-wget https://github.com/prometheus/prometheus/releases/download/v2.33.3/prometheus-2.33.3.linux-amd64.tar.gz
-sleep 5s
-tar -xvf prometheus-2.33.3.linux-amd64.tar.gz
-sleep 2s
-cd prometheus-2.33.3.linux-amd64
-sleep 2s
-sudo vi prometheus.yml
-
 #!/bin/sh
 
 cd /usr/bin
@@ -33,7 +25,3 @@ sleep 2s
 sudo systemctl start start-prom-app.service
 sleep 2s
 sudo systemctl status start-prom-app.service -l
-sleep 2s
-sudo vi /usr/bin/prom/prometheus-2.33.3.linux-amd64/prometheus.yml
-
-

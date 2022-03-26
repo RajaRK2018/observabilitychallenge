@@ -1,0 +1,11 @@
+[Unit]
+Description=My Prom Shell Script
+After=multi-user.target
+
+[Service]
+Type=oneshot  
+RemainAfterExit=yes
+ExecStart=/usr/bin/prom/start-prom-app.sh
+
+[Install]
+WantedBy=multi-user.target

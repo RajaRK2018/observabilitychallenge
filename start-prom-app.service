@@ -5,7 +5,7 @@ After=multi-user.target
 [Service]
 Type=oneshot  
 RemainAfterExit=yes
-ExecStart=/usr/bin/prom/start-prom-app.sh
+ExecStart=/home/ec2-user/prom/start-prom-app.sh
 
 [Install]
 WantedBy=multi-user.target

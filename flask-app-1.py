@@ -3,8 +3,8 @@ from prometheus_flask_exporter import PrometheusMetrics
 app = Flask(__name__)
 metrics = PrometheusMetrics(app)
 
-from random import randint
-from time import sleep
+# from random import randint
+# from time import sleep
 
 @app.route('/')
 def main(): 

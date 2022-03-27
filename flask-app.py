@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from flask import Flask,redirect
 from prometheus_flask_exporter import PrometheusMetrics
 app = Flask(__name__)

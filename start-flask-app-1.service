@@ -1,0 +1,11 @@
+[Unit]
+Description=My Shell Script
+After=multi-user.target
+
+[Service]
+Type=oneshot  
+RemainAfterExit=yes
+ExecStart=/home/ec2-user/obs/start-flask-app-1.sh
+
+[Install]
+WantedBy=multi-user.target

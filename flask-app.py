@@ -1,9 +1,12 @@
-from random import randint
-from time import sleep
 from flask import Flask,redirect
 from prometheus_flask_exporter import PrometheusMetrics
+
+from random import randint
+from time import sleep
+
 app = Flask(__name__)
 metrics = PrometheusMetrics(app)
+
 @app.route('/')
 def main():
  sleep(randint(1,2))

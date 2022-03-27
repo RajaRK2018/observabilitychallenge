@@ -10,23 +10,22 @@ from time import sleep
 
 @app.route('/')
 def main(): 
- sleep(randint(1,2))
+ sleep(0.5)
  return 'Welcome to Flask App'
 @app.route('/redirect')
 def handle_redirect(): 
- sleep(randint(1,2))
+ sleep(0.75)
  return redirect("/", code=302)
 @app.route('/bad_request')
 def bad_request(): 
- sleep(randint(3,4))
+ sleep(1)
  return 'bad request!', 400
 @app.errorhandler(404)
 def pageNotFound(error): 
- sleep(randint(5,6))
+ sleep(2)
  return 'page not found!', 404
 @app.route('/exception')
 def exception(): 
- sleep(randint(6,8))
+ sleep(3)
  return exception("Causing Exception")
 app.run(host='0.0.0.0')
-

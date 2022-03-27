@@ -16,18 +16,18 @@ wget https://github.com/prometheus/node_exporter/releases/download/v1.3.1/node_e
 sleep 3s
 tar -xvf node_exporter-1.3.1.linux-amd64.tar.gz
 sleep 1s
-wget https://raw.githubusercontent.com/RajaRK2018/observabilitychallenge/main/start-flask-app.sh
+wget https://raw.githubusercontent.com/RajaRK2018/observabilitychallenge/main/start-flask-app-1.sh
 sleep 3s
-chmod +x start-flask-app.sh
+chmod +x start-flask-app-1.sh
 sleep 1s
-wget https://raw.githubusercontent.com/RajaRK2018/observabilitychallenge/main/start-flask-app.service
+wget https://raw.githubusercontent.com/RajaRK2018/observabilitychallenge/main/start-flask-app-1.service
 sleep 3s
-sudo cp start-flask-app.service /lib/systemd/system/
+sudo cp start-flask-app-1.service /lib/systemd/system/
 sleep 2s
 sudo systemctl daemon-reload
 sleep 2s
-sudo systemctl enable start-flask-app.service
+sudo systemctl enable start-flask-app-1.service
 sleep 2s
-sudo systemctl start start-flask-app.service
+sudo systemctl start start-flask-app-1.service
 sleep 2s
-sudo systemctl status start-flask-app.service -l
+sudo systemctl status start-flask-app-1.service -l

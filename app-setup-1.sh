@@ -1,11 +1,10 @@
 #!/bin/sh
 
-cd /usr/bin
-sudo mkdir obs
+mkdir obs
 sleep 1s
 cd obs
 sleep 1s
-pip3 uninstall flask && python3 -m pip3 install flask
+pip3 install flask
 sleep 5s
 pip3 install prometheus-flask-exporter
 sleep 5s

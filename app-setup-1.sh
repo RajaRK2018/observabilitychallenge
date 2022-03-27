@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cd /usr/bin
+sleep 1s
 mkdir obs
 sleep 1s
 cd obs
